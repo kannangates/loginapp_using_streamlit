@@ -3,7 +3,7 @@ import streamlit as st
 import streamlit.components.v1 as stc
 
 HTML_BANNER = """
-    <div style="background-color:#464e5f;padding:10px;border-radius:10px">
+    <div style="background-color:#567e5f;padding:3px;border-radius:10px">
     <h1 style="color:white;text-align:center;">Select Menu from Sidebar for Navigation</h1>
     </div>
     """
@@ -34,7 +34,7 @@ def login_user(username, password):
     return data
 
 
-def view_all_user():
+def view_all_user(username):
     c.execute("Select * from userstable")
     data = c.fetchall()
     return data
